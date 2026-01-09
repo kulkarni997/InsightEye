@@ -1,0 +1,1 @@
+Sentinel-Vision utilizes the YOLOv11 (You Only Look Once) architecture for real-time spatial detection. It leverages a Feature Pyramid Network (FPN) for multi-scale object recognition.
