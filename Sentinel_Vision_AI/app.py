@@ -62,7 +62,7 @@ if img_file_buffer is not None:
             # Action: Download Scan Report
             csv = df.to_csv(index=False).encode('utf-8')
             st.download_button(
-                label="📥 Export Detection Log",
+                label="📥 Export Detection Log in csv",
                 data=csv,
                 file_name=f"sentinel_scan_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                 mime='text/csv',
@@ -71,4 +71,4 @@ if img_file_buffer is not None:
             st.write(f"**Last Scan:** {datetime.now().strftime('%H:%M:%S')}")
             st.write(f"**Total Objects:** {len(labels)}")
         else:
-            st.warning("No threats or objects detected.")
+            st.warning("No threats or objects detected so far.")
