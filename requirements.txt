@@ -1,4 +1,6 @@
-ultralytics
 streamlit
-opencv-python
+ultralytics
+opencv-python-headless
+numpy
 pandas
+fpdf2
