@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import numpy as np
 import pandas as pd
 from datetime import datetime
-from fpdf import FPDF # New Import
+from fpdf import FPDF 
 import tempfile
 
 # --- NEW FUNCTION: PDF GENERATION ---
@@ -96,10 +96,11 @@ if img_file_buffer is not None:
                 label="📥 CSV Report",
                 data=csv,
                 file_name=f"scan_{datetime.now().strftime('%H%M%S')}.csv",
-                mime='text/csv',
+                mime='text/csv', 
+                
             )
             
-            # PDF Download
+           
             pdf_data = create_pdf(df, annotated_frame)
             c2.download_button(
                 label="📄 PDF Report",
